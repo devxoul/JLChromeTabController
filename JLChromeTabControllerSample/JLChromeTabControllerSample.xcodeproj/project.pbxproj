@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033A03D9187C504600B94B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03D8187C504600B94B5A /* Foundation.framework */; };
+		033A03DB187C504600B94B5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03DA187C504600B94B5A /* CoreGraphics.framework */; };
+		033A03DD187C504600B94B5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03DC187C504600B94B5A /* UIKit.framework */; };
+		033A03E3187C504600B94B5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033A03E1187C504600B94B5A /* InfoPlist.strings */; };
+		033A03E5187C504600B94B5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A03E4187C504600B94B5A /* main.m */; };
+		033A03E9187C504600B94B5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A03E8187C504600B94B5A /* AppDelegate.m */; };
+		033A03EB187C504600B94B5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033A03EA187C504600B94B5A /* Images.xcassets */; };
+		033A03F2187C504600B94B5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03F1187C504600B94B5A /* XCTest.framework */; };
+		033A03F3187C504600B94B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03D8187C504600B94B5A /* Foundation.framework */; };
+		033A03F4187C504600B94B5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A03DC187C504600B94B5A /* UIKit.framework */; };
+		033A03FC187C504600B94B5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033A03FA187C504600B94B5A /* InfoPlist.strings */; };
+		033A03FE187C504600B94B5A /* JLChromeTabControllerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A03FD187C504600B94B5A /* JLChromeTabControllerSampleTests.m */; };
+		033A040A187C507300B94B5A /* JLChromeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A0409187C507300B94B5A /* JLChromeTabController.m */; };
+		033A040D187C50D100B94B5A /* JLChromeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040C187C50D100B94B5A /* JLChromeTabBar.m */; };
+		033A0410187C542900B94B5A /* JLChromeTabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		033A03F5187C504600B94B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 033A03CD187C504600B94B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033A03D4187C504600B94B5A;
+			remoteInfo = JLChromeTabControllerSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033A03D5187C504600B94B5A /* JLChromeTabControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLChromeTabControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033A03D8187C504600B94B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		033A03DA187C504600B94B5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		033A03DC187C504600B94B5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		033A03E0187C504600B94B5A /* JLChromeTabControllerSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JLChromeTabControllerSample-Info.plist"; sourceTree = "<group>"; };
+		033A03E2187C504600B94B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		033A03E4187C504600B94B5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		033A03E6187C504600B94B5A /* JLChromeTabControllerSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLChromeTabControllerSample-Prefix.pch"; sourceTree = "<group>"; };
+		033A03E7187C504600B94B5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		033A03E8187C504600B94B5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		033A03EA187C504600B94B5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		033A03F0187C504600B94B5A /* JLChromeTabControllerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLChromeTabControllerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		033A03F1187C504600B94B5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		033A03F9187C504600B94B5A /* JLChromeTabControllerSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JLChromeTabControllerSampleTests-Info.plist"; sourceTree = "<group>"; };
+		033A03FB187C504600B94B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		033A03FD187C504600B94B5A /* JLChromeTabControllerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabControllerSampleTests.m; sourceTree = "<group>"; };
+		033A0408187C507300B94B5A /* JLChromeTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabController.h; sourceTree = "<group>"; };
+		033A0409187C507300B94B5A /* JLChromeTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabController.m; sourceTree = "<group>"; };
+		033A040B187C50D100B94B5A /* JLChromeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBar.h; sourceTree = "<group>"; };
+		033A040C187C50D100B94B5A /* JLChromeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBar.m; sourceTree = "<group>"; };
+		033A040E187C542900B94B5A /* JLChromeTabBarItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBarItemView.h; sourceTree = "<group>"; };
+		033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBarItemView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033A03D2187C504600B94B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A03DB187C504600B94B5A /* CoreGraphics.framework in Frameworks */,
+				033A03DD187C504600B94B5A /* UIKit.framework in Frameworks */,
+				033A03D9187C504600B94B5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033A03ED187C504600B94B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A03F2187C504600B94B5A /* XCTest.framework in Frameworks */,
+				033A03F4187C504600B94B5A /* UIKit.framework in Frameworks */,
+				033A03F3187C504600B94B5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033A03CC187C504600B94B5A = {
+			isa = PBXGroup;
+			children = (
+				033A03DE187C504600B94B5A /* JLChromeTabControllerSample */,
+				033A03F7187C504600B94B5A /* JLChromeTabControllerSampleTests */,
+				033A03D7187C504600B94B5A /* Frameworks */,
+				033A03D6187C504600B94B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		033A03D6187C504600B94B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033A03D5187C504600B94B5A /* JLChromeTabControllerSample.app */,
+				033A03F0187C504600B94B5A /* JLChromeTabControllerSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033A03D7187C504600B94B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033A03D8187C504600B94B5A /* Foundation.framework */,
+				033A03DA187C504600B94B5A /* CoreGraphics.framework */,
+				033A03DC187C504600B94B5A /* UIKit.framework */,
+				033A03F1187C504600B94B5A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		033A03DE187C504600B94B5A /* JLChromeTabControllerSample */ = {
+			isa = PBXGroup;
+			children = (
+				033A03E7187C504600B94B5A /* AppDelegate.h */,
+				033A03E8187C504600B94B5A /* AppDelegate.m */,
+				033A03EA187C504600B94B5A /* Images.xcassets */,
+				033A0407187C505B00B94B5A /* JLChromeTabController */,
+				033A03DF187C504600B94B5A /* Supporting Files */,
+			);
+			path = JLChromeTabControllerSample;
+			sourceTree = "<group>";
+		};
+		033A03DF187C504600B94B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				033A03E0187C504600B94B5A /* JLChromeTabControllerSample-Info.plist */,
+				033A03E1187C504600B94B5A /* InfoPlist.strings */,
+				033A03E4187C504600B94B5A /* main.m */,
+				033A03E6187C504600B94B5A /* JLChromeTabControllerSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		033A03F7187C504600B94B5A /* JLChromeTabControllerSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				033A03FD187C504600B94B5A /* JLChromeTabControllerSampleTests.m */,
+				033A03F8187C504600B94B5A /* Supporting Files */,
+			);
+			path = JLChromeTabControllerSampleTests;
+			sourceTree = "<group>";
+		};
+		033A03F8187C504600B94B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				033A03F9187C504600B94B5A /* JLChromeTabControllerSampleTests-Info.plist */,
+				033A03FA187C504600B94B5A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		033A0407187C505B00B94B5A /* JLChromeTabController */ = {
+			isa = PBXGroup;
+			children = (
+				033A0408187C507300B94B5A /* JLChromeTabController.h */,
+				033A0409187C507300B94B5A /* JLChromeTabController.m */,
+				033A040B187C50D100B94B5A /* JLChromeTabBar.h */,
+				033A040C187C50D100B94B5A /* JLChromeTabBar.m */,
+				033A040E187C542900B94B5A /* JLChromeTabBarItemView.h */,
+				033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */,
+			);
+			name = JLChromeTabController;
+			path = ../../JLChromeTabController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033A03D4187C504600B94B5A /* JLChromeTabControllerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033A0401187C504600B94B5A /* Build configuration list for PBXNativeTarget "JLChromeTabControllerSample" */;
+			buildPhases = (
+				033A03D1187C504600B94B5A /* Sources */,
+				033A03D2187C504600B94B5A /* Frameworks */,
+				033A03D3187C504600B94B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLChromeTabControllerSample;
+			productName = JLChromeTabControllerSample;
+			productReference = 033A03D5187C504600B94B5A /* JLChromeTabControllerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		033A03EF187C504600B94B5A /* JLChromeTabControllerSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033A0404187C504600B94B5A /* Build configuration list for PBXNativeTarget "JLChromeTabControllerSampleTests" */;
+			buildPhases = (
+				033A03EC187C504600B94B5A /* Sources */,
+				033A03ED187C504600B94B5A /* Frameworks */,
+				033A03EE187C504600B94B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				033A03F6187C504600B94B5A /* PBXTargetDependency */,
+			);
+			name = JLChromeTabControllerSampleTests;
+			productName = JLChromeTabControllerSampleTests;
+			productReference = 033A03F0187C504600B94B5A /* JLChromeTabControllerSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033A03CD187C504600B94B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Joyfl;
+				TargetAttributes = {
+					033A03EF187C504600B94B5A = {
+						TestTargetID = 033A03D4187C504600B94B5A;
+					};
+				};
+			};
+			buildConfigurationList = 033A03D0187C504600B94B5A /* Build configuration list for PBXProject "JLChromeTabControllerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 033A03CC187C504600B94B5A;
+			productRefGroup = 033A03D6187C504600B94B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033A03D4187C504600B94B5A /* JLChromeTabControllerSample */,
+				033A03EF187C504600B94B5A /* JLChromeTabControllerSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033A03D3187C504600B94B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A03E3187C504600B94B5A /* InfoPlist.strings in Resources */,
+				033A03EB187C504600B94B5A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033A03EE187C504600B94B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A03FC187C504600B94B5A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033A03D1187C504600B94B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A040A187C507300B94B5A /* JLChromeTabController.m in Sources */,
+				033A03E9187C504600B94B5A /* AppDelegate.m in Sources */,
+				033A03E5187C504600B94B5A /* main.m in Sources */,
+				033A040D187C50D100B94B5A /* JLChromeTabBar.m in Sources */,
+				033A0410187C542900B94B5A /* JLChromeTabBarItemView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033A03EC187C504600B94B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033A03FE187C504600B94B5A /* JLChromeTabControllerSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		033A03F6187C504600B94B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033A03D4187C504600B94B5A /* JLChromeTabControllerSample */;
+			targetProxy = 033A03F5187C504600B94B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		033A03E1187C504600B94B5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033A03E2187C504600B94B5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		033A03FA187C504600B94B5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033A03FB187C504600B94B5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033A03FF187C504600B94B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033A0400187C504600B94B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		033A0402187C504600B94B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLChromeTabControllerSample/JLChromeTabControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "JLChromeTabControllerSample/JLChromeTabControllerSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		033A0403187C504600B94B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLChromeTabControllerSample/JLChromeTabControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "JLChromeTabControllerSample/JLChromeTabControllerSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		033A0405187C504600B94B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JLChromeTabControllerSample.app/JLChromeTabControllerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLChromeTabControllerSample/JLChromeTabControllerSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JLChromeTabControllerSampleTests/JLChromeTabControllerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		033A0406187C504600B94B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JLChromeTabControllerSample.app/JLChromeTabControllerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLChromeTabControllerSample/JLChromeTabControllerSample-Prefix.pch";
+				INFOPLIST_FILE = "JLChromeTabControllerSampleTests/JLChromeTabControllerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033A03D0187C504600B94B5A /* Build configuration list for PBXProject "JLChromeTabControllerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033A03FF187C504600B94B5A /* Debug */,
+				033A0400187C504600B94B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033A0401187C504600B94B5A /* Build configuration list for PBXNativeTarget "JLChromeTabControllerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033A0402187C504600B94B5A /* Debug */,
+				033A0403187C504600B94B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		033A0404187C504600B94B5A /* Build configuration list for PBXNativeTarget "JLChromeTabControllerSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033A0405187C504600B94B5A /* Debug */,
+				033A0406187C504600B94B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033A03CD187C504600B94B5A /* Project object */;
+}
