@@ -12,4 +12,7 @@
 
 @property (nonatomic, copy) NSArray *viewControllers;
 
+@property(nonatomic, readonly) UIViewController *selectedViewController;
+@property(nonatomic) NSUInteger selectedIndex;
+
 @end

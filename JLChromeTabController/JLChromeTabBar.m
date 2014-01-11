@@ -102,6 +102,11 @@ static NSString *kCellID = @"kCellID";
 {
     [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
     [self.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+    
+    if( [self.delegate respondsToSelector:@selector(tabBar:didSelectItem:)] ) {
+        UITabBarItem *item = [self.items objectAtIndex:indexPath.row];
+        [self.delegate tabBar:self didSelectItem:item];
+    }
 }
 
 @end

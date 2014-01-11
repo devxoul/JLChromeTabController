@@ -22,6 +22,7 @@
 		033A040A187C507300B94B5A /* JLChromeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A0409187C507300B94B5A /* JLChromeTabController.m */; };
 		033A040D187C50D100B94B5A /* JLChromeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040C187C50D100B94B5A /* JLChromeTabBar.m */; };
 		033A0410187C542900B94B5A /* JLChromeTabBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040F187C542900B94B5A /* JLChromeTabBarItemCell.m */; };
+		033A041318813E3D00B94B5A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A041218813E3D00B94B5A /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		033A040C187C50D100B94B5A /* JLChromeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBar.m; sourceTree = "<group>"; };
 		033A040E187C542900B94B5A /* JLChromeTabBarItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBarItemCell.h; sourceTree = "<group>"; };
 		033A040F187C542900B94B5A /* JLChromeTabBarItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBarItemCell.m; sourceTree = "<group>"; };
+		033A041118813E3D00B94B5A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		033A041218813E3D00B94B5A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				033A03E7187C504600B94B5A /* AppDelegate.h */,
 				033A03E8187C504600B94B5A /* AppDelegate.m */,
+				033A041118813E3D00B94B5A /* TestViewController.h */,
+				033A041218813E3D00B94B5A /* TestViewController.m */,
 				033A03EA187C504600B94B5A /* Images.xcassets */,
 				033A0407187C505B00B94B5A /* JLChromeTabController */,
 				033A03DF187C504600B94B5A /* Supporting Files */,
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033A041318813E3D00B94B5A /* TestViewController.m in Sources */,
 				033A040A187C507300B94B5A /* JLChromeTabController.m in Sources */,
 				033A03E9187C504600B94B5A /* AppDelegate.m in Sources */,
 				033A03E5187C504600B94B5A /* main.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JLChromeTabController.h"
+#import "TestViewController.h"
 
 @implementation AppDelegate
 
@@ -16,25 +17,43 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
+    UITabBarController *t = [[UITabBarController alloc] init];
+    t.viewControllers = @[[[UIViewController alloc] init], [[UIViewController alloc] init], [[UIViewController alloc] init]];
+    NSLog( @"t: %@", NSStringFromCGRect(t.view.frame));
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        NSLog( @"rotate t: %@", NSStringFromCGRect(t.view.frame));
+    });
+    
+//    for( UIViewController *vc in t.viewControllers ) {
+//        vc.view.backgroundColor = [UIColor redColor];
+//        NSLog(@"frame : %@", NSStringFromCGRect(vc.view.frame));
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
     NSMutableArray *viewControllers = [NSMutableArray array];
     for( int i = 0; i < 10; i++ ) {
-        UIViewController *viewController = [[UIViewController alloc] init];
-        viewController.view.backgroundColor = [UIColor whiteColor];
-        
-        UILabel *label = [[UILabel alloc] init];
-        label.font = [UIFont boldSystemFontOfSize:100];
-        label.text = [NSString stringWithFormat:@"%d", i];
-        [label sizeToFit];
-        [viewController.view addSubview:label];
+        UIViewController *viewController = [[TestViewController alloc] init];
+        viewController.title = [NSString stringWithFormat:@"%d", i];
         
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
         [viewControllers addObject:navController];
+        
+        NSLog(@"frame : %@", NSStringFromCGRect(navController.view.frame));
     }
     
     JLChromeTabController *tabController = [[JLChromeTabController alloc] init];
     tabController.viewControllers = viewControllers;
     self.window.rootViewController = tabController;
-    
+
     return YES;
 }
 
