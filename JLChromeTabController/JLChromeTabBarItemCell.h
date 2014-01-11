@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLChromeTabBarItemView : UIButton
+@interface JLChromeTabBarItemCell : UICollectionViewCell
 
 
 

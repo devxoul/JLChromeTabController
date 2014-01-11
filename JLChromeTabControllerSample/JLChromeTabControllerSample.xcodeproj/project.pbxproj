@@ -21,7 +21,7 @@
 		033A03FE187C504600B94B5A /* JLChromeTabControllerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A03FD187C504600B94B5A /* JLChromeTabControllerSampleTests.m */; };
 		033A040A187C507300B94B5A /* JLChromeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A0409187C507300B94B5A /* JLChromeTabController.m */; };
 		033A040D187C50D100B94B5A /* JLChromeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040C187C50D100B94B5A /* JLChromeTabBar.m */; };
-		033A0410187C542900B94B5A /* JLChromeTabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */; };
+		033A0410187C542900B94B5A /* JLChromeTabBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A040F187C542900B94B5A /* JLChromeTabBarItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		033A0409187C507300B94B5A /* JLChromeTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabController.m; sourceTree = "<group>"; };
 		033A040B187C50D100B94B5A /* JLChromeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBar.h; sourceTree = "<group>"; };
 		033A040C187C50D100B94B5A /* JLChromeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBar.m; sourceTree = "<group>"; };
-		033A040E187C542900B94B5A /* JLChromeTabBarItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBarItemView.h; sourceTree = "<group>"; };
-		033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBarItemView.m; sourceTree = "<group>"; };
+		033A040E187C542900B94B5A /* JLChromeTabBarItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChromeTabBarItemCell.h; sourceTree = "<group>"; };
+		033A040F187C542900B94B5A /* JLChromeTabBarItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChromeTabBarItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +161,8 @@
 				033A0409187C507300B94B5A /* JLChromeTabController.m */,
 				033A040B187C50D100B94B5A /* JLChromeTabBar.h */,
 				033A040C187C50D100B94B5A /* JLChromeTabBar.m */,
-				033A040E187C542900B94B5A /* JLChromeTabBarItemView.h */,
-				033A040F187C542900B94B5A /* JLChromeTabBarItemView.m */,
+				033A040E187C542900B94B5A /* JLChromeTabBarItemCell.h */,
+				033A040F187C542900B94B5A /* JLChromeTabBarItemCell.m */,
 			);
 			name = JLChromeTabController;
 			path = ../../JLChromeTabController;
@@ -267,7 +267,7 @@
 				033A03E9187C504600B94B5A /* AppDelegate.m in Sources */,
 				033A03E5187C504600B94B5A /* main.m in Sources */,
 				033A040D187C50D100B94B5A /* JLChromeTabBar.m in Sources */,
-				033A0410187C542900B94B5A /* JLChromeTabBarItemView.m in Sources */,
+				033A0410187C542900B94B5A /* JLChromeTabBarItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

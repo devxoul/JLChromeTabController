@@ -6,16 +6,16 @@
 //  Copyright (c) 2014년 Joyfl. All rights reserved.
 //
 
-#import "JLChromeTabBarItemView.h"
+#import "JLChromeTabBarItemCell.h"
 
-@interface JLChromeTabBarItemView ()
+@interface JLChromeTabBarItemCell ()
 
 //@property (nonatomic, strong) UIImageView *backgroundView;
 
 @end
 
 
-@implementation JLChromeTabBarItemView
+@implementation JLChromeTabBarItemCell
 
 - (id)init
 {
@@ -27,9 +27,19 @@
 {
     self = [super initWithFrame:frame];
     
-    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateNormal] forState:UIControlStateNormal];
-    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateSelected] forState:UIControlStateSelected];
-    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateDisabled] forState:UIControlStateDisabled];
+    CGRect bounds = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:bounds];
+    backgroundView.image = [self createBackgroundImageForState:UIControlStateNormal];
+    self.backgroundView = backgroundView;
+    
+    UIImageView *selectedBackgroundView = [[UIImageView alloc] initWithFrame:bounds];
+    selectedBackgroundView.image = [self createBackgroundImageForState:UIControlStateSelected];
+    self.selectedBackgroundView = selectedBackgroundView;
+    
+//    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateNormal] forState:UIControlStateNormal];
+//    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateSelected] forState:UIControlStateSelected];
+//    [self setBackgroundImage:[self createBackgroundImageForState:UIControlStateDisabled] forState:UIControlStateDisabled];
     
     return self;
 }
