@@ -17,7 +17,7 @@
     [self.window makeKeyAndVisible];
     
     NSMutableArray *viewControllers = [NSMutableArray array];
-    for( int i = 0; i < 5; i++ ) {
+    for( int i = 0; i < 10; i++ ) {
         UIViewController *viewController = [[UIViewController alloc] init];
         viewController.view.backgroundColor = [UIColor whiteColor];
         

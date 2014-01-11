@@ -23,6 +23,7 @@
     self = [super init];
     
     self.tabBar = [[JLChromeTabBar alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 31)];
+    self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:self.tabBar];
     
     return self;
