@@ -21,7 +21,6 @@
 - (id)init
 {
     self = [super init];
-    self.view.backgroundColor = [UIColor darkGrayColor];
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.view.autoresizesSubviews = YES;
     

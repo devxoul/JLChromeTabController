@@ -65,6 +65,7 @@ static NSString *kCellID = @"kCellID";
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     self.collectionView.showsHorizontalScrollIndicator = NO;
+    self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[JLChromeTabBarItemCell class] forCellWithReuseIdentifier:kCellID];
     [self addSubview:self.collectionView];
     
